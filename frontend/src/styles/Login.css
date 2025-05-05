@@ -1,0 +1,89 @@
+/* Center the login box */
+.login-container {
+    max-width: 500px;
+    margin: 6rem auto; /* Centered and pushed down */
+    background-color: #2d2d2d;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.1);
+}
+
+/* Style for the login box */
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Headline (Login) */
+.login-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #dcc289;
+    font-weight: 600;
+}
+
+/* Input fields */
+.input-group {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #f0f0f0;
+    font-size: 1rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #888;
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    font-size: 1rem;
+}
+
+/* Login button */
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #dcc289;
+    color: #1f1f1f;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #c4aa6b;
+}
+
+/* Signup link text */
+.signup-text {
+    margin-top: 1rem;
+    color: #f0f0f0;
+    font-size: 1rem;
+}
+
+/* Link inside signup text */
+.signup-text a {
+    color: #dcc289;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* Error message */
+.error-text {
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}

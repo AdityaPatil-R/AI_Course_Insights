@@ -1,0 +1,21 @@
+{
+    "name": "student-performance-evaluator",
+    "version": "1.0.0",
+    "description": "Student performance evaluator project with backend (Node.js, Express) and frontend (React)",
+    "main": "index.js",
+    "scripts": {
+        "start": "concurrently \"npm run server\" \"npm run client\"",
+        "server": "cd backend && npm install && npm run start",
+        "client": "cd frontend && npm install && npm run start"
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "dependencies": {
+        "@napi-rs/canvas": "^0.1.69",
+        "node-fetch": "^3.3.2",
+        "pdfjs-dist": "^4.8.69"
+    }
+}

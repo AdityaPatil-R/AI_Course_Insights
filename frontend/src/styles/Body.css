@@ -1,0 +1,362 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  text-align: center; /* Center text and inline elements globally */
+}
+
+/* variables */
+:root {
+  --blue: #dcc289;
+  --text-color: #ebebde;
+  --bg-color: #222222;
+  --black: #302c2c;
+  --gradient: linear-gradient(
+    104deg,
+    rgba(253, 89, 73, 1) 0%,
+    rgb(228, 223, 238) 100%
+  );
+}
+
+body {
+  color: var(--blue);
+  background: var(--bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.container {
+  max-width: 860px;
+  margin: auto;
+  width: 100%;
+  text-align: center; 
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center nav items */
+  gap: 2rem; /* Add some space between items */
+  padding: 15px 0;
+}
+
+.instructions p {
+    margin-bottom: 10px; /* small gap between each paragraph */
+    font-size: 1rem;
+    text-align: center;
+    color: var(--text-color); /* or whatever your text color is */
+  }
+  
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: rgba(253, 89, 73, 1);
+  background: var(--gradient);
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.nav-icons .bx {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+.nav-icons .bx:hover,
+.actions-icons .bx:hover {
+  background: rgb(97, 197, 15);
+  background: var(--blue);
+  color: white;
+  background-clip: text;
+  transition: 0.3s all linear;
+}
+
+.nav-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid rgba(214, 36, 158, 1);
+}
+
+/* Hide Camera In Desktop Mode */
+.camera {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  display: none;
+}
+
+section {
+  padding: 4rem 0;
+  margin-top: 4rem !important;
+}
+
+.main {
+  display: flex;
+  justify-content: center; /* Center main content */
+  gap: 2rem;
+}
+
+.post-container {
+  max-width: 550px;
+  width: 100%;
+  margin: auto;
+}
+
+.post-box {
+  width: 100%;
+  background: var(--white);
+  border: 1px solid hsla(264, 87%, 24%, 0.1);
+  margin-bottom: 2rem;
+}
+
+.post-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.post-profile {
+  display: flex;
+  align-items: center;
+  column-gap: 0.8rem;
+}
+
+.post-profile img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 2px solid rgb(53, 201, 193);
+}
+
+.profile-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.location {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.info-icon {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.post-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.post-bottom {
+  display: grid;
+  padding: 10px 15px;
+}
+
+.actions-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.7rem;
+}
+
+.save-icon {
+  margin: 0 0 0 auto;
+}
+
+.actions-icons .bx {
+  font-size: 2.1rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+/* heart & comment size*/
+.actions-icons input {
+  width: 40px; 
+  height: 40px; 
+  margin: 5px 10px; 
+  filter: invert(97%) sepia(10%) saturate(1024%) hue-rotate(325deg) brightness(101%) contrast(90%);
+  transition: background-color 0.3s ease, filter 0.3s ease; 
+}
+
+.actions-icons input:hover {
+  cursor: pointer;
+  background-color: rgb(229, 86, 184);
+}
+
+.likes {
+  display: flex;
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.bxs-heart {
+  font-size: 2.1rem;
+  color: red; 
+  cursor: pointer;
+  transition: color 0.3s ease; 
+}
+
+/* Optional: Add a hover effect */
+.bx-heart:hover,
+.bxs-heart:hover {
+  color: red; /* Change to your desired hover color */
+}
+
+.comment {
+  display: block;
+  align-items: center;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.comment a {
+  font-weight: 500;
+  color: var(--text-color);
+  background: transparent;
+  margin-right: 0.5rem;
+  padding: 0;
+}
+.comment-user-button {
+  background: transparent;
+  color: #eed8cb; 
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.comment-user-button:hover {
+  color: #aa1ccd; 
+}
+
+.hastag {
+  color: var(--blue);
+}
+
+.view-more {
+  font-size: 0.9rem;
+  color: #8b8b8b;
+  cursor: pointer;
+}
+
+.post-time {
+  font-size: 0.8rem;
+  color: #8b8b8b;
+  margin-top: 0.5rem;
+}
+/* Making Responsive */
+@media (max-width: 875px) {
+  .nav {
+    padding: 10px 0;
+    width: 95%;
+  }
+  
+  .post-container {
+    margin: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .post-box {
+    border: none;
+  }
+
+  .post-img {
+    height: 450px;
+  }
+
+  section {
+    margin-top: 1rem !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .camera {
+    display: initial;
+  }
+
+  .nav-icons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #181a25;
+    padding: 8px 0;
+    justify-content: space-around;
+  }
+
+  .nav-icons .bx {
+    color: #d1d1d1;
+  }
+
+  .post-img {
+    height: 350px;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+}
+
+ h1{
+    font-size: 3rem;
+}
+
+
+
+
+
+
+

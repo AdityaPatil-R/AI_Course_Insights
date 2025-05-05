@@ -1,0 +1,11 @@
+# Node.js
+node_modules/
+backend/node_modules/
+.env
+uploads/
+package-lock.json
+.DS_Store
+
+# React
+frontend/node_modules/
+frontend/build/

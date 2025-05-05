@@ -1,0 +1,157 @@
+/* === Animations === */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+/* === Global Body Background === */
+body {
+  margin: 0;
+  background-color: #0d0d0d; /* You can remove this if your page background is already styled elsewhere */
+}
+
+/* === Header === */
+.header {
+  background-color: transparent;
+  color: #ffd700;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in;
+}
+
+/* === Main Layout Containers === */
+.insights-viewer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw; /* Full viewport width */
+  min-height: 100vh; /* Full viewport height */
+  padding: 2rem;
+  background: none; /* Transparent to show page background */
+}
+
+/* === Insights Box === */
+.insights-box {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  
+  width: 90%;
+  max-width: 1200px;
+  min-width: 300px;
+
+  transition: width 0.3s ease, padding 0.3s ease;
+}
+
+/* === Dropdown === */
+.category-select {
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #555;
+  border-radius: 0.5rem;
+  color: #f0f0f0;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 1rem;
+  appearance: none;
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.category-select:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #777;
+}
+
+/* === Insight Section Container === */
+.insight-section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* === Insight Cards === */
+.class-insight-card {
+  background: #2a2a2a;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.class-insight-card:hover {
+  transform: translateY(-5px);
+}
+
+/* === Special Styling for Sections === */
+.insight-achievement {
+  border-left: 6px solid #28a745; /* green for strengths */
+}
+
+.insight-focus {
+  border-left: 6px solid #ffc107; /* yellow for focus areas */
+}
+
+.insight-growth {
+  border-left: 6px solid #17a2b8; /* blue for growth steps */
+}
+
+/* === Section Titles === */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffd700;
+  text-align: left;
+}
+
+/* === Section Bullet Lists === */
+.section-bullets {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.section-bullets li {
+  font-size: 1rem;
+  color: #f0f0f0;
+  margin-bottom: 1rem; /* Extra space between bullets */
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* === Loading State === */
+.loading {
+  color: #f0f0f0;
+  font-size: 1.5rem;
+  animation: pulse 1.5s infinite;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* === Responsive Tweaks for Mobile === */
+@media (max-width: 768px) {
+  .insights-box {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .class-insight-card {
+    padding: 1.25rem;
+  }
+
+  .category-select {
+    font-size: 0.95rem;
+  }
+}
